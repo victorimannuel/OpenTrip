@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".auth.RegisterFragment">
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="118dp"-->
+    <!--            android:layout_height="118dp"-->
+    <!--            android:src="@mipmap/ic_logo_foreground"-->
+    <!--            android:layout_marginStart="147dp"-->
+    <!--            android:layout_marginTop="17dp"-->
+    <!--            android:layout_marginEnd="146dp"/>-->
+
+    <!--        <FrameLayout-->
+    <!--            android:layout_width="343dp"-->
+    <!--            android:layout_height="wrap_content"-->
+
+    <!--            android:layout_marginBottom="62dp"-->
+    <!--            android:elevation="14dp"-->
+    <!--            android:background="@drawable/rounded_border_daftar">-->
+
+    <!--            <RadioGroup-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="12dp"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                android:layout_gravity="center_horizontal">-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+    <!--                    android:id="@+id/button_nav_masuk"-->
+    <!--                    android:layout_width="153dp"-->
+    <!--                    android:layout_height="47dp"-->
+    <!--                    android:backgroundTint="@color/main"-->
+    <!--                    style="@style/semibold"-->
+    <!--                    android:text="Masuk"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textAllCaps="false"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="15sp"-->
+    <!--                    app:cornerRadius="80dp"/>-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+    <!--                    android:layout_width="135dp"-->
+    <!--                    android:layout_height="46.5dp"-->
+    <!--                    android:layout_marginStart="-30dp"-->
+    <!--                    android:backgroundTint="@color/white"-->
+    <!--                    style="@style/semibold"-->
+    <!--                    android:text="Daftar"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textAllCaps="false"-->
+    <!--                    android:textColor="@color/main"-->
+    <!--                    android:textSize="15sp"-->
+    <!--                    app:cornerRadius="80dp" />-->
+    <!--            </RadioGroup>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Sudah mendaftar? "
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Masuk"
+            android:textColor="@color/orange"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_gravity="center_horizontal"
+        app:boxStrokeColor="@color/orange"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:hintTextColor="@color/black"
+        android:hint="Nama" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_daftar_nama"
+            android:layout_width="211dp"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:textCursorDrawable="@drawable/cursor_edit_text"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_gravity="center_horizontal"
+        app:boxStrokeColor="@color/orange"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:hintTextColor="@color/black"
+        android:hint="Email" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_daftar_email"
+            android:layout_width="211dp"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:textCursorDrawable="@drawable/cursor_edit_text"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:layout_gravity="center_horizontal"
+        app:boxStrokeColor="@color/orange"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:hintTextColor="@color/black"
+        android:hint="No. Telp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_daftar_notelp"
+            android:layout_width="211dp"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:textCursorDrawable="@drawable/cursor_edit_text"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:layout_gravity="center_horizontal"
+        app:boxStrokeColor="@color/orange"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/black"
+        android:hint="Password" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_daftar_password"
+            android:layout_width="211dp"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:textCursorDrawable="@drawable/cursor_edit_text"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_daftar"
+        android:layout_width="133dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="343dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        app:cornerRadius="80dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="405dp"
+        android:layout_marginBottom="67dp"
+        android:padding="2dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_google_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_vector"
+            android:background="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_facebook_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_vector1"
+            android:background="@color/white" />
+    </LinearLayout>
+    <!--    </FrameLayout>-->
+</FrameLayout>

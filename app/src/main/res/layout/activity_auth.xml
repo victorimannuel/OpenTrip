@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.AuthActivity">
+
+    <ImageView
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:src="@drawable/logo_anugrah_travel"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.akademik.opentrip.helper.DynamicPagerCustom
+        android:id="@+id/view_pager_auth"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_border_daftar"
+        android:elevation="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.akademik.opentrip.helper.DynamicPagerCustom>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:translationZ="16dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs_auth"
+            android:layout_width="287dp"
+            android:layout_height="35dp"
+            app:tabBackground="@drawable/tabdefault"
+            app:tabIndicator="@drawable/tabselected"
+            app:tabIndicatorAnimationMode="linear"
+            app:tabIndicatorGravity="stretch"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="10dp"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/orange"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_host_fragment_authentication"-->
+    <!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:defaultNavHost="true"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:navGraph="@navigation/navigation_graph_auth" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
